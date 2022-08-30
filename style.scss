@@ -7,10 +7,51 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	overflow: hidden;
 	margin: 0;
+}
+
+img {
+	height: 500px;
+	width: 500px;
+	object-fit: cover;
+}
+
+.carousel {
+	box-shadow: 2px 2px 5px rgba(black, 0.3);
+	height: 530px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.image-container {
+	display: flex;
+	transform: translateX(0);
+	transition: transform 500ms ease-in-out;
+}
+
+.button-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn {
+	background-color: rebeccapurple;
+	color: #fff;
+	border: none;
+	padding: 0.5rem;
+	width: 49.5%;
+	transform: scale(1);
+	cursor: pointer;
+	&:hover {
+		opacity: 0.9;
+	}
+	&:focus {
+		outline: none;
+	}
+	// &:active {
+	// 	transform: scale(0.98);
+	// }
 }
